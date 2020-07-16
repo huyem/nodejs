@@ -1,0 +1,41 @@
+div{
+    width: calc(50%-20px);
+    height: 100px;
+    float: left;
+    border: 1px solid red;
+    padding: 200px 150px 10px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.traffic-light{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    float: left;
+    border-radius: 100%;
+}
+div span.oranger{
+    background-color: orange;
+}
+div>span.oranger{
+    background-color: #21c500;
+}
+.popup{
+    width: 30px;
+    height: 40px;
+    border:1px solid red #ccc;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.bg-face{
+    position: fixed;
+    width: 60%;
+    height: 50%;
+    background-color: #21c500;
+    opacity: 0.7;
+
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "name": "đồng hồ",
+    "gia": "1000000đ",
+    "img": "img/anh1.png",
+    "introduct": "sang chanh sanh dieu và phong cãh",
+    "sl": 4
+  },
+  {
+    "id":2,
+    "name": "do bon đi",
+    "gia": "1000000đ",
+    "img": "img/anh2.png",
+    "introduct": "sang chanh sanh dieu và phong cãh",
+    "sl": 1
+  },{
+  "id":3,
+  "name": "mi tom",
+  "gia": "1000000đ",
+  "img": "img/anh3.png",
+  "introduct": "sang chanh sanh dieu và phong cãh",
+  "sl": 10
+},{
+  "id":4,
+  "name": "ao",
+  "gia": "1000000đ",
+  "img": "img/anh4.png",
+  "introduct": "sang chanh sanh dieu và phong cãh",
+  "sl": 20
+}
+]

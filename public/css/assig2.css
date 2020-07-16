@@ -1,0 +1,18 @@
+
+h1{
+    font-size: 15px;
+    text-align: right;
+    font-weight: 400;
+}
+h2{
+    color: #9F224E;
+    text-decoration: underline;
+    text-align: top left  ;
+}
+h3{
+    text-align: left;
+    border-bottom:1px solid #9F224E;
+
+}
+h4{ float: left;
+}

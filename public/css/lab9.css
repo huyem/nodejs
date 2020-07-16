@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 900px;
+    background-color: #2B333F;
+    width: 1500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+.button{
+    background:#FFFFFF;
+    /*height:100vh;*/
+
+    height: 300px;
+    width: 500px;
+    box-sizing: border-box;
+    position: fixed;
+
+}
+.onc{
+    font-size: 30px;
+    border: 1px solid #CCCCCC;
+    height: 75px;
+
+}
+.button-ocn{
+    margin-top: 18px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 0px solid #CCCCCC;
+    font-size: 20px;
+    font-weight: 400;
+
+
+}
+#home{
+    display: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+#profile{
+    display: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+#messages{
+    display: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+#setting{
+    display: none;
+    font-size: 20px;
+    font-weight: 400;
+}

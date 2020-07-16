@@ -1,0 +1,28 @@
+.tab{
+    float: left;
+    width: 100%;
+}
+.tab li{
+    float: left;
+    margin-right: 20px;
+}
+.content{
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+    /*//che tAT CA NHUng phan vuot qua pham vi ben tren */
+
+}
+.content_all{
+    float: left;
+    width: 1600px;
+    height: 200px;
+    transition: all 300ms;
+}
+.tab_content{
+    float: left;
+    width: 400px;
+    height: 200px;
+}

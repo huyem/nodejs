@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("head") %>
+    <body>
+    <section class="section">
+        <div class="container">
+            <form action="/" method="get" class="form-group">
+                <input type="text" name="cityname" class="form-control"/>
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+            <h1>Thời tiết hôm nay và ngày mai</h1>
+            <h2>Thành phố</h2>
+            <h3>Bạn là người thứ: <%= count%></h3>
+            <div class="row" id="weather">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div id="map"></div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        let api_url = "http://api.openweathermap.org/data/2.5/forecast";
+        $.ajax({
+            url: api_url,
+            method: "GET",
+            data:{
+                // q:"Hanoi,vietnam",
+                q: '<%= city %>',
+                appid:"09a71427c59d38d6a34f89b47d75975c",
+                units:"metric"
+            },
+            success: function (rs) {
+                $("h2").text(rs.city.name+", "+rs.city.country);
+                rs.list.map(function (e) {
+                    let item_html = "<div class=\"col-md-3 col-sm-4 col-xs-6 item\">\n" +
+                        "                       <div class=\"item\" >\n" +
+                        "                           <p class=\"datetime\">"+e.dt_txt+"</p>\n" +
+                        "                           <p class=\"temp\"><span>"+e.main.temp+"</span> <sup>o</sup>C</p>\n" +
+                        "                           <p class=\"desc\">"+e.weather[0].description+"</p>\n" +
+                        "                           <img src=\"https://openweathermap.org/img/wn/"+e.weather[0].icon+"@2x.png\">\n" +
+                        "                       </div>\n" +
+                        "                    </div>";
+                    // $("weather").html($("weather").html()+item_html);
+                    $("#weather").append(item_html);
+                })
+            }
+        });
+        </script>
+    </body>
+</html>
